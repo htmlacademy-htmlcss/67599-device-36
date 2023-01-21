@@ -2,21 +2,19 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
+    <title>Интернет-магазин гаджетов "Девайс"</title>
   </head>
   <body>
 
     <header class="page-header">
+      <a class="header-logo">
+        <img class="logo-img" src="#" alt="Логотип интернет-магазина Девайс">
+      </a>
       <nav class="navigation">
-        <div class="logo">
-          <span class="visually-hidden">
-            Device
-          </span>
-        </div>
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
-            <input class="site-search" type="text" placeholder="Поиск по сайту">
-            <span class="site-text">Найти</span>
+            <input class="site-search" type="text" name="appointment-search" placeholder="Поиск по сайту">
+            <a class="site-text" href="#">Найти</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link-top" href="#">Войти</a>
@@ -24,15 +22,20 @@
         </ul>
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
-            <a class="navigation-link" href="delivery.html">Сравнить</a>
+            <a class="navigation-link" href="#">Сравнить</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="guarantee.html">Корзина</a>
+            <a class="navigation-link" href="#">Корзина</a>
           </li>
         </ul>
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="navigation-item">
+            <button class="navigation-link" type="button">
+              <span class="visually-hidden">Раскрыть каталог</span>
+            </button>
           </li>
         </ul>
         <ul class="navigation-list">
@@ -49,8 +52,267 @@
       </nav>
     </header>
 
-    <main>
+    <main class="main-index">
+      <h1 class="visually-hidden">Интернет-магазин гаджетов "Device"</h1>
 
+      <section class="goods-slider">
+        <h2 class="visually-hidden">Слайдер гаджетов</h2>
+
+        <div class="slider-wrapper">
+          <div class="goods-image">
+            <img class="slider-image" src="#" alt="Пример гаджета">
+          </div>
+
+          <div class="goods-description">
+            <p class="goods-number">01</p>
+            <p class="goods-feature">Порхает как бабочка, жалит как пчела!</p>
+            <p class="goods-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+            <a class="goods-details" href="#">Подробнее</a>
+            <ul class="goods-list">
+              <li class="goods-item">
+                <b class="goods-value">800 м</b>
+                <span class="goods-definition">Дальность полета</span>
+              </li>
+              <li class="goods-item">
+                <b class="goods-value">50 м</b>
+                <span class="goods-definition">Радиус поражения</span>
+              </li>
+            </ul>
+          </div>
+
+          <button class="slider-button slider-prev">
+            <span class="visually-hidden">Предыдущий гаджет</span>
+          </button>
+          <button class="slider-button slider-next">
+            <span class="visually-hidden">Следующий гаджет</span>
+          </button>
+
+          <ol class="slider-pagination">
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                <span class="visually-hidden">1 гаджет</span>
+              </button>
+            </li>
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button" type="button">
+                <span class="visually-hidden">2 гаджет</span>
+              </button>
+            </li>
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button" type="button">
+                <span class="visually-hidden">3 гаджет</span>
+              </button>
+            </li>
+          </ol>
+        </div>
+
+        <div class="slider-wrapper visually-hidden">
+          <div class="goods-image">
+            <img class="slider-image" src="#" alt="Пример гаджета">
+          </div>
+
+          <div class="goods-description">
+            <p class="goods-number">02</p>
+            <p class="goods-feature">Худеем правильно!</p>
+            <p class="goods-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+            <a class="goods-details" href="#">Подробнее</a>
+            <ul class="goods-list">
+              <li class="goods-item">
+                <b class="goods-value">48 часов</b>
+                <span class="goods-definition">Без подзарядки</span>
+              </li>
+            </ul>
+          </div>
+
+          <button class="slider-button slider-prev">
+            <span class="visually-hidden">Предыдущий гаджет</span>
+          </button>
+          <button class="slider-button slider-next">
+            <span class="visually-hidden">Следующий гаджет</span>
+          </button>
+
+          <ol class="slider-pagination">
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button" type="button">
+                <span class="visually-hidden">1 гаджет</span>
+              </button>
+            </li>
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                <span class="visually-hidden">2 гаджет</span>
+              </button>
+            </li>
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button" type="button">
+                <span class="visually-hidden">3 гаджет</span>
+              </button>
+            </li>
+          </ol>
+        </div>
+
+        <div class="slider-wrapper visually-hidden">
+          <div class="goods-image">
+            <img class="slider-image" src="#" alt="Пример гаджета">
+          </div>
+
+          <div class="goods-description">
+            <p class="goods-number">03</p>
+            <p class="goods-feature">Делай селфи, как Бен Стиллер</p>
+            <p class="goods-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг. </p>
+            <a class="goods-details" href="#">Подробнее</a>
+            <ul class="goods-list">
+              <li class="goods-item">
+                <b class="goods-value">8,5 м</b>
+                <span class="goods-definition">Длина палки</span>
+              </li>
+              <li class="goods-item">
+                <b class="goods-value">5 кг</b>
+                <span class="goods-definition">Вес палки</span>
+              </li>
+              <li class="goods-item">
+                <b class="goods-value">Карбон</b>
+                <span class="goods-definition">Материал</span>
+              </li>
+            </ul>
+          </div>
+
+          <button class="slider-button slider-prev">
+            <span class="visually-hidden">Предыдущий гаджет</span>
+          </button>
+          <button class="slider-button slider-next">
+            <span class="visually-hidden">Следующий гаджет</span>
+          </button>
+
+          <ol class="slider-pagination">
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button" type="button">
+                <span class="visually-hidden">1 гаджет</span>
+              </button>
+            </li>
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button" type="button">
+                <span class="visually-hidden">2 гаджет</span>
+              </button>
+            </li>
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button  slider-pagination-button-current" type="button">
+                <span class="visually-hidden">3 гаджет</span>
+              </button>
+            </li>
+          </ol>
+        </div>
+
+      </section>
+
+      <section class="catalog">
+        <h2 class="visually-hidden">Каталог гаджетов</h2>
+
+        <ul class="catalog-list">
+          <li class="catalog-item">
+            <a class="-catalog-link" href="#">
+              <img class="catalog-image" src="#" alt="Изображение раздела каталога">
+              <p class="catalog-title">Виртуальная реальность</p>
+            </a>
+          </li>
+          <li class="catalog-item">
+            <a class="-catalog-link" href="#">
+              <img class="catalog-image" src="#" alt="Изображение раздела каталога">
+              <p class="catalog-title">Моноподы для селфи</p>
+            </a>
+          </li>
+          <li class="catalog-item">
+            <a class="-catalog-link" href="#">
+              <img class="catalog-image" src="#" alt="Изображение раздела каталога">
+              <p class="catalog-title">Экшн-камеры</p>
+            </a>
+          </li>
+          <li class="catalog-item">
+            <a class="-catalog-link" href="#">
+              <img class="catalog-image" src="#" alt="Изображение раздела каталога">
+              <p class="catalog-title">Фитнес-браслеты</p>
+            </a>
+          </li>
+          <li class="catalog-item">
+            <a class="-catalog-link" href="#">
+              <img class="catalog-image" src="#" alt="Изображение раздела каталога">
+              <p class="catalog-title">Умные часы</p>
+            </a>
+          </li>
+          <li class="catalog-item">
+            <a class="-catalog-link" href="#">
+              <img class="catalog-image" src="#" alt="Изображение раздела каталога">
+              <p class="catalog-title">Квадрокоптеры</p>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="services">
+        <h2 class="vusually-hidden">Сервисы</h2>
+
+        <div class="services-wrapper">
+          <ul class="services-list">
+            <li class="services-item">
+              <a  class="services-link services-link-current" href="#">Доставка</a>
+            </li>
+            <li class="services-item">
+              <a  class="services-link" href="#">Гарантия</a>
+            </li>
+            <li class="services-item">
+              <a  class="services-link" href="#">Кредит</a>
+            </li>
+          </ul>
+
+          <div class="services-definition services-delivery">
+            <h3 class="services-title">Доставка</h3>
+            <p class="services-description">
+              Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+              <img class="services-image" src="#" alt="Лого доставка">
+          </div>
+        </div>
+
+        <div class="services-wrapper visually-hidden">
+          <ul class="services-list">
+            <li class="services-item">
+              <a  class="services-link" href="#">Доставка</a>
+            </li>
+            <li class="services-item">
+              <a  class="services-link services-link-current" href="#">Гарантия</a>
+            </li>
+            <li class="services-item">
+              <a  class="services-link" href="#">Кредит</a>
+            </li>
+          </ul>
+
+          <div class="services-definition services-guarantee">
+            <h3 class="services-title">Гарантия</h3>
+            <p class="services-description">
+              Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+              <img class="services-image" src="#" alt="Лого гарантия">
+          </div>
+        </div>
+
+        <div class="services-wrapper visually-hidden">
+          <ul class="services-list">
+            <li class="services-item">
+              <a  class="services-link" href="#">Доставка</a>
+            </li>
+            <li class="services-item">
+              <a  class="services-link" href="#">Гарантия</a>
+            </li>
+            <li class="services-item">
+              <a  class="services-link  services-link-current" href="#">Кредит</a>
+            </li>
+          </ul>
+
+          <div class="services-definition services-credit">
+            <h3 class="services-title">Кредит</h3>
+            <p class="services-description">
+              Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
+              <img class="services-image" src="#" alt="Лого кредит">
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="page-footer">
