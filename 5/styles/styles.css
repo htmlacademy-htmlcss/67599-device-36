@@ -42,10 +42,6 @@ body {
 /* header */
 .page-header {
   color: #000000;
-  background-color: #ffffff;;
-}
-
-.header-container {
   width: 1160px;
   margin: 0 auto;
   background-color: #ffe17f;
@@ -560,6 +556,7 @@ body {
   color: #000000;
   list-style-type: none;
   margin: 0;
+  padding: 0;
 }
 
 .product-card-link {
