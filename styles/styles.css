@@ -29,6 +29,7 @@ html {
 
 body {
   margin: 0;
+  padding-top: 40px;
   display: flex;
   flex-direction: column;
   min-height: 100%;
@@ -39,17 +40,36 @@ body {
   background-color: #ffffff;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* header */
 .page-header {
+  position: relative;
   color: #000000;
   width: 1160px;
   margin: 0 auto;
+  padding: 46px 60px 0;
   background-color: #ffe17f;
+}
+
+.header-logo {
+  position: absolute;
+  left: 60px;
+  top: -20px;
 }
 
 .header-top {
   display: flex;
-  padding: 0 60px;
+  margin-bottom: 35px;
 }
 
 .form-search {
@@ -79,9 +99,11 @@ body {
 .navigation-user {
   list-style-type: none;
   margin: 0;
+  margin-left: auto;
   padding: 0;
   width: 500px;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .navigation-user-item:not(:last-child) {
@@ -95,7 +117,6 @@ body {
 .navigation {
   display: flex;
   justify-content: space-between;
-  padding: 0 60px;
 }
 
 .navigation-list {
@@ -104,7 +125,17 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.navigation-list-catalog {
+  width: 500px;
+  list-style-type: none;
+  margin: 0;
+  margin-right: 7px;
+  padding: 0;
+  display: flex;
 }
 
 .navigation-link-top {
@@ -114,6 +145,14 @@ body {
 
 .navigation-link-top-logout {
   opacity: 0.3;
+}
+
+.navigation-item-catalog {
+  width: 236px;
+}
+
+.navigation-item:not(:last-child) {
+  margin-right: 20px;
 }
 
 .navigation-link {
@@ -126,8 +165,14 @@ body {
   margin-right: 7px;
 }
 
+.button-navigation-link {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
 .navigation-link:last-child {
-  margin-right: 0;
+  margin-right: -0.2em;
 }
 
 
