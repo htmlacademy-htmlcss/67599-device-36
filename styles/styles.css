@@ -394,9 +394,7 @@ body {
 }
 
 .services-item {
-  height: 40px;
-  display: flex;
-  align-items: center;
+  padding: 10px 0;
   margin-bottom: 35px;
 }
 
@@ -655,12 +653,12 @@ body {
 
 .footer-contacts-address-text {
   margin: 0;
+  margin-bottom: 64px;
 }
 
 .footer-contacts-address::after {
   content: "";
   display: block;
-  margin-top: 64px;
   width: 80px;
   height: 7px;
   background-color: #ffc700;
