@@ -198,10 +198,45 @@ body {
 
 .catalog-menu {
   position: absolute;
+  top: 55px;
+  left: 0;
+  width: 700px;
+  height: 120px;
+  display: grid;
+  grid-template-columns: 260px 220px 220px;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    "virtual bracelet quadcopter"
+    "selfie watch ."
+    "camera . .";
   list-style-type: none;
   margin: 0;
   padding: 0;
-  display: none;
+  /* display: none; */
+}
+
+.virtual {
+  grid-area: virtual;
+}
+
+.bracelet {
+  grid-area: bracelet;
+}
+
+.quadcopter {
+  grid-area: quadcopter;
+}
+
+.selfie {
+  grid-area: selfie;
+}
+
+.watch {
+  grid-area: watch;
+}
+
+.camera {
+  grid-area: camera;
 }
 
 .catalog-menu-link {
