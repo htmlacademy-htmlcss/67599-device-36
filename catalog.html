@@ -105,7 +105,9 @@
       <section class="catalog-products">
         <div class="page-container catalog-wrapper">
           <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="get">
-            <h2 class="catalog-products-title">Фильтр:</h2>
+            <div class="filter-title-box">
+              <h2 class="catalog-products-title">Фильтр:</h2>
+            </div>
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Стоимость</legend>
 
@@ -185,12 +187,14 @@
                 <option value="expensive">Дорогие</option>
               </select>
 
-              <a class="button button-expensive" href="#">
-                <span class="visuially-hidden">Дороже.</span>
-              </a>
-              <a class="button button-cheaper" href="#">
-                <span class="visuially-hidden">Дешевле.</span>
-              </a>
+              <div class="sorting-buttons">
+                <a class="button button-expensive" href="#">
+                  <span class="visuially-hidden">Дороже.</span>
+                </a>
+                <a class="button button-cheaper" href="#">
+                  <span class="visuially-hidden">Дешевле.</span>
+                </a>
+              </div>
             </div>
 
             <ul class="product-list">
@@ -266,7 +270,7 @@
         <section class="footer-address">
           <h2 class="visually-hidden">Адрес.</h2>
 
-          <a class="footer-logo">
+          <a class="footer-logo" href="index.html">
             <span class="visually-hidden">Логотип Device.</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="145" height="36" fill="none" viewBox="0 0 145 36"
               aria-hidden="true" focusable="false">
