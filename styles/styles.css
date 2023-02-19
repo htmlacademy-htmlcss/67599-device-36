@@ -896,6 +896,7 @@ body {
 
 .product-card-image {
   margin-bottom: 32px;
+  object-fit: contain;
 }
 
 .card-description  {
