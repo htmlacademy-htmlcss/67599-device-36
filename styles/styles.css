@@ -877,12 +877,16 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
-  justify-items: center;
   background-color: #ffffff;
   color: #000000;
   list-style-type: none;
-  margin: 0 auto;
-  padding: 70px 0 40px;
+  margin: 0 auto 44px;
+  padding: 70px 0 0 0;
+
+}
+
+.product-card {
+  width: 360px;
 }
 
 .product-card-link {
@@ -890,10 +894,21 @@ body {
   color: inherit;
 }
 
+.product-card-image {
+  margin-bottom: 32px;
+}
+
+.card-description  {
+  display: flex;
+  justify-content: space-between;
+}
+
 .product-card-title {
+  width: 235px;
   font-weight: 700;
   line-height: 20px;
   letter-spacing: -0.02em;
+  margin: 0;
 }
 
 .product-card-price {
