@@ -145,7 +145,6 @@ body {
 }
 
 .navigation-list-catalog {
-  position: relative;
   width: 520px;
   list-style-type: none;
   margin: 0;
@@ -188,7 +187,7 @@ body {
   border-radius: 50%;
   border: 2px solid #000000;
   opacity: 0.3;
-  background-color: #FFE17F;
+  background-color: #ffe17f;
 }
 
 .navigation-link:last-child {
@@ -198,45 +197,24 @@ body {
 
 .catalog-menu {
   position: absolute;
-  top: 55px;
   left: 0;
-  width: 700px;
-  height: 120px;
+  right: 0;
+  z-index: 1;
   display: grid;
   grid-template-columns: 260px 220px 220px;
-  grid-template-rows: repeat(3, 1fr);
-  grid-template-areas:
-    "virtual bracelet quadcopter"
-    "selfie watch ."
-    "camera . .";
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 14px 0 0 60px;
+  background-color: #ffe17f;
   /* display: none; */
 }
 
-.virtual {
-  grid-area: virtual;
+.catalog-menu-item {
+  padding: 5px 0;
 }
 
-.bracelet {
-  grid-area: bracelet;
-}
-
-.quadcopter {
-  grid-area: quadcopter;
-}
-
-.selfie {
-  grid-area: selfie;
-}
-
-.watch {
-  grid-area: watch;
-}
-
-.camera {
-  grid-area: camera;
+.catalog-menu-item:last-child {
+  grid-column: 1 / 2;
 }
 
 .catalog-menu-link {
@@ -817,6 +795,7 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   margin: 0;
+  padding: 25px 0;
 }
 
 .catalog-wrapper {
@@ -868,7 +847,6 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: #f0f0f0;
-  height: 70px;
   padding: 0 40px;
 }
 
@@ -876,7 +854,7 @@ body {
   width: 760px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 40px;
+  gap: 44px 40px;
   background-color: #ffffff;
   color: #000000;
   list-style-type: none;
@@ -885,27 +863,21 @@ body {
 
 }
 
-.product-card {
-  width: 360px;
-}
-
 .product-card-link {
   text-decoration: none;
   color: inherit;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
 }
 
 .product-card-image {
   margin-bottom: 32px;
   object-fit: contain;
-}
-
-.card-description  {
-  display: flex;
-  justify-content: space-between;
+  grid-column: 1 / -1;
 }
 
 .product-card-title {
-  width: 235px;
+  grid-column: 1 / 2;
   font-weight: 700;
   line-height: 20px;
   letter-spacing: -0.02em;
@@ -913,6 +885,8 @@ body {
 }
 
 .product-card-price {
+  justify-self: end;
+  grid-column: 2 / 3;
   line-height: 21px;
   color: #444444;
   margin: 0;
