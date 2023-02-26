@@ -27,13 +27,22 @@
         </form>
         <ul class="navigation-user">
           <li class="navigation-user-item">
-            <a class="navigation-link-top" href="#">Войти</a>
+            <a class="navigation-link-top" href="#">
+              <svg class="navigation-icon" xmlns="http://www.w3.org/2000/svg" width="13" height="12" fill="none" viewBox="0 0 13 12" aria-hidden="true" focusable="false"><path fill="#000" d="M0 12h13c-.2-2.6-2.1-4.8-4.7-5.5 1-.6 1.7-1.7 1.7-3C10 1.6 8.4 0 6.5 0S3 1.6 3 3.5c0 1.3.7 2.4 1.7 3C2.1 7.2.2 9.4 0 12Z"/></svg>
+              Войти
+            </a>
           </li>
           <li class="navigation-user-item navigation-user-item-compare">
-            <a class="navigation-link-top" href="#">Сравнить</a>
+            <a class="navigation-link-top" href="#">
+              <svg class="navigation-icon" xmlns="http://www.w3.org/2000/svg" width="10" height="12" fill="none" viewBox="0 0 10 12" aria-hidden="true" focusable="false"><g fill="#000" filter="url(#a)"><path d="M6 0H4v12h2V0ZM2 4H0v8h2V4ZM10 3H8v9h2V3Z"/></g><defs><filter id="a" width="18" height="20" x="-4" y="0" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dy="4"/><feGaussianBlur stdDeviation="2"/><feComposite in2="hardAlpha" operator="out"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/><feBlend in2="BackgroundImageFix" result="effect1_dropShadow_32466_580"/><feBlend in="SourceGraphic" in2="effect1_dropShadow_32466_580" result="shape"/></filter></defs></svg>
+              Сравнить
+            </a>
           </li>
           <li class="navigation-user-item">
-            <a class="navigation-link-top" href="#">Корзина</a>
+            <a class="navigation-link-top navigation-basket" href="#">
+              <svg class="navigation-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none" viewBox="0 0 16 14" aria-hidden="true" focusable="false"><path fill="#000" d="m15.3 5-3.5.2L8.6.3C8.5.1 8.2 0 8 0c-.2 0-.5.1-.6.3L4.2 5.2H.7c-.4 0-.7.3-.7.7v.2l1.9 6.8c.2.7.7 1.1 1.4 1.1h9.4c.7 0 1.2-.4 1.4-1.1L16 6v-.2c0-.4-.3-.8-.7-.8ZM8 1.9l2.2 3.2H5.9L8 1.9Z"/></svg>
+              Корзина
+            </a>
           </li>
         </ul>
       </div>
@@ -46,6 +55,8 @@
           <li class="navigation-item">
             <button class="navigation-link button-navigation-link" type="button">
               <span class="visually-hidden">Раскрыть каталог.</span>
+              <svg class="button-navigation-plus button-navigation-show" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path fill="#000" d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7Z"/></svg>
+              <svg class="button-navigation-minus button-navigation-hide" xmlns="http://www.w3.org/2000/svg" width="16" height="2" fill="none" viewBox="0 0 16 2" aria-hidden="true" focusable="false"><path fill="#000" d="M16 0H0v2h16V0Z"/></svg>
             </button>
             <ul class="catalog-menu">
               <li class="catalog-menu-item">
@@ -101,7 +112,7 @@
               <p class="goods-feature">Порхает как бабочка, жалит как пчела!</p>
               <p class="goods-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным
                 под стандартную камеру.</p>
-              <a class="info-details" href="#">Подробнее</a>
+              <a class="goods-more info-details" href="#">Подробнее</a>
               <ul class="goods-list">
                 <li class="goods-item">
                   <b class="goods-value">800 м</b>
@@ -126,7 +137,7 @@
               <p class="goods-feature">Худеем правильно!</p>
               <p class="goods-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и
                 соблюдать диету.</p>
-              <a class="info-details" href="#">Подробнее</a>
+              <a class="goods-more info-details" href="#">Подробнее</a>
               <ul class="goods-list">
                 <li class="goods-item">
                   <b class="goods-value">48 часов</b>
@@ -144,11 +155,11 @@
 
             <div class="goods-description">
               <p class="goods-number">03</p>
-              <p class="goods-feature">Делай селфи, как Бен Стиллер</p>
+              <p class="goods-feature">Делай селфи,<br> как Бен Стиллер</p>
               <p class="goods-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!)
                 метров
                 длиной и весом всего 5 кг. </p>
-              <a class="info-details" href="#">Подробнее</a>
+              <a class="goods-more info-details" href="#">Подробнее</a>
               <ul class="goods-list">
                 <li class="goods-item goods-item-mod">
                   <b class="goods-value">8,5 м</b>
@@ -197,22 +208,22 @@
 
           <ul class="catalog-list">
             <li class="catalog-item">
-              <a class="catalog-link" href="#">Виртуальная реальность</a>
+              <a class="catalog-link catalog-link-virtual" href="#">Виртуальная реальность</a>
             </li>
             <li class="catalog-item">
-              <a class="catalog-link" href="#">Моноподы для селфи</a>
+              <a class="catalog-link catalog-link-monopods" href="#">Моноподы для селфи</a>
             </li>
             <li class="catalog-item">
-              <a class="catalog-link" href="#">Экшн-камеры</a>
+              <a class="catalog-link catalog-link-action" href="#">Экшн-камеры</a>
             </li>
             <li class="catalog-item">
-              <a class="catalog-link" href="#">Фитнес-браслеты</a>
+              <a class="catalog-link catalog-link-fitness" href="#">Фитнес-браслеты</a>
             </li>
             <li class="catalog-item">
-              <a class="catalog-link" href="#">Умные часы</a>
+              <a class="catalog-link catalog-link-watches" href="#">Умные часы</a>
             </li>
             <li class="catalog-item">
-              <a class="catalog-link" href="#">Квадрокоптеры</a>
+              <a class="catalog-link catalog-link-quadro" href="#">Квадрокоптеры</a>
             </li>
           </ul>
         </section>
@@ -228,10 +239,10 @@
                 <a class="services-link services-link-current" href="#">Доставка</a>
               </li>
               <li class="services-item">
-                <a class="services-link" href="#">Гарантия</a>
+                <a class="services-link info-details" href="#">Гарантия</a>
               </li>
               <li class="services-item">
-                <a class="services-link" href="#">Кредит</a>
+                <a class="services-link info-details" href="#">Кредит</a>
               </li>
             </ul>
 
@@ -264,7 +275,10 @@
         <div class="button-wrapper">
           <div class="page-container">
             <button class="button button-delivery" type="button">
-            <span class="button-delivery-text">Доставим редкий товар под заказ</span>
+              Доставим редкий товар под заказ
+              <div class="button-delivery-info">
+                <svg xmlns="http://www.w3.org/2000/svg" width="2" height="12" fill="none" viewBox="0 0 2 12" aria-hidden="true" focusable="false"><g fill="#000" clip-path="url(#a)" opacity=".3"><path d="M2 0H0v2h2V0ZM2 4H0v8h2V4Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h2v12H0z"/></clipPath></defs></svg>
+              </div>
             <!-- Проверить в будущем необходимость span -->
           </button>
           </div>
