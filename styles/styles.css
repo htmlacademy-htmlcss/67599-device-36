@@ -231,7 +231,7 @@ body {
   border-radius: 50%;
   background-color: #ffffff;
   color: #000000;
-  font-family: 'Rubik';
+  font-family: "Rubik", sans-serif;
   font-size: 14px;
   display: flex;
   justify-content: center;
@@ -806,7 +806,7 @@ body {
   left: 0;
   width: 125px;
   background-color: #ffe17f;
-  background-image: url(../images/services/delivery-auto.svg);
+  background-image: url("../images/services/delivery-auto.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 47px 31px;
@@ -1052,7 +1052,7 @@ body {
   left: -26px;
   width: 15px;
   height: 14px;
-  background-image: url(../images/tick-big.svg);
+  background-image: url("../images/tick-big.svg");
   background-position: center;
   background-size: 15px 14px;
   background-repeat: no-repeat;
@@ -1223,17 +1223,17 @@ body {
 }
 
 .button-social-telegram::after {
-  background-image: url(../images/social/telegram.svg);
+  background-image: url("../images/social/telegram.svg");
   background-size: 14px 12px;
 }
 
 .button-social-youtube::after {
-  background-image: url(../images/social/youtube.svg);
+  background-image: url("../images/social/youtube.svg");
   background-size: 16px 11px;
 }
 
 .button-social-twitter::after {
-  background-image: url(../images/social/twitter.svg);
+  background-image: url("../images/social/twitter.svg");
   background-size: 15px 15px;
 }
 
@@ -1270,11 +1270,12 @@ body {
   width: 115px;
   height: 33px;
   margin-left: auto;
+  color: #ffc700;
 }
 
-.footer-htmlacademy-logo:hover path {
+.footer-htmlacademy-logo:hover {
   transition: all 0.2s;
-  fill: #ffffff;
+  color: #ffffff;
 }
 
 .footer-htmlacademy-logo:focus {
@@ -1326,7 +1327,7 @@ body {
   right: -26px;
   width: 10px;
   height: 10px;
-  background-image: url(../images/select-arrow.svg);
+  background-image: url("../images/select-arrow.svg");
   background-size: 10px 7px;
   background-repeat: no-repeat;
   background-position: center;
@@ -1409,7 +1410,7 @@ body {
   width: 220px;
   border: none;
   padding: 10px 0;
-  font-family: 'Raleway';
+  font-family: "Raleway", sans-serif;
   font-size: 18px;
   z-index: 1;
   cursor: pointer;
@@ -1431,7 +1432,7 @@ body {
   appearance: none;
   padding: 10px;
   padding-right: 30px;
-  background-image: url(../images/select-arrow.svg);
+  background-image: url("../images/select-arrow.svg");
   background-size: 10px 7px;
   background-repeat: no-repeat;
   background-position: right 10px center;
@@ -1473,7 +1474,7 @@ body {
   left: 0;
   width: 20px;
   height: 20px;
-  background-image: url(../images/sort.svg);
+  background-image: url("../images/sort.svg");
   background-size: 12px 10px;
   background-position: center;
   background-repeat: no-repeat;
@@ -1488,7 +1489,7 @@ body {
   transform: rotate(180deg);
   width: 20px;
   height: 20px;
-  background-image: url(../images/sort.svg);
+  background-image: url("../images/sort.svg");
   background-size: 12px 10px;
   background-position: center;
   background-repeat: no-repeat;
@@ -1547,7 +1548,7 @@ body {
   height: 60px;
   border: 2px solid rgba(0, 0, 0, 0.6);
   border-radius: 50%;
-  background-image: url(../images/new.svg);
+  background-image: url("../images/new.svg");
   background-size: 39px 10px;
   background-repeat: no-repeat;
   background-position: center;
@@ -1560,7 +1561,7 @@ body {
   width: 220px;
   padding: 10px 0;
   border: none;
-  font-family: 'Raleway';
+  font-family: "Raleway", sans-serif;
   font-size: 18px;
   letter-spacing: 0.2em;
   font-weight: 800;
@@ -1725,7 +1726,7 @@ body {
   width: 760px;
   padding: 18px 0;
   margin: 0 auto 44px;
-  border: 3px solid #E5E5E5;
+  border: 3px solid #e5e5e5;
   font-family: "Raleway", sans-serif;
   color: #000000;
   text-decoration: none;
