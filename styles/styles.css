@@ -170,7 +170,6 @@ body {
 
 .navigation-user-item-compare {
   margin-left: auto;
-  /* margin-right: 15px; */
 }
 
 .navigation {
@@ -452,7 +451,7 @@ body {
   padding: 0;
   font-weight: 700;
   font-size: 180px;
- color: #ffffff;  /* Потом раскомментирую */
+  color: #ffffff;
   text-align: right;
 }
 
@@ -746,29 +745,6 @@ body {
   padding-bottom: 30px;
 }
 
-
-/* .catalog-link::after {
-  position: absolute;
-  top: -185px;
-  left: 0;
-  content: "";
-  width: 160px;
-  height: 160px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #ffe17f;
-} */
-
-/* .catalog-link:hover {
-  transition: all 0.2s;
-  background-image: #ffc700;
-} */
-
-/* .catalog-link:focus::after {
-  box-shadow: inset 0 0 0 2px #af4fff;
-  outline: none;
-} */
-
 .catalog-link:focus {
   box-shadow: inset 0 0 0 2px #af4fff;
   outline: none;
@@ -778,37 +754,6 @@ body {
   transition: all 0.2s;
   opacity: 0.3;
 }
-
-/* .catalog-link-virtual::after {
-  background-image: url("../images/index-catalog/virtual-reality.svg");
-  background-size: 97px 55px;
-}
-
-.catalog-link-monopods::after {
-  background-image: url("../images/index-catalog/monopods.svg");
-  background-size: 87px 117px;
-  background-position: center bottom;
-}
-
-.catalog-link-action::after {
-  background-image: url("../images/index-catalog/action-cameras.svg");
-  background-size: 72px 87px;
-}
-
-.catalog-link-fitness::after {
-  background-image: url("../images/index-catalog/fitness-bracelets.svg");
-  background-size: 108px 66px;
-}
-
-.catalog-link-watches::after {
-  background-image: url("../images/index-catalog/smart-watches.svg");
-  background-size: 57px 98px;
-}
-
-.catalog-link-quadro::after {
-  background-image: url("../images/index-catalog/quadrocopters.svg");
-  background-size: 133px 70px;
-} */
 
 /* services */
 .services {
@@ -1377,21 +1322,7 @@ body {
   text-decoration: none;
   width: 40px;
   height: 40px;
-  /* background-color: rgba(255, 255, 255, 0.3); */
-  /* border-radius: 50%; */
 }
-
-/* .button-social::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-repeat: no-repeat;
-  background-position: center;
-} */
 
 .social {
   display: block;
@@ -1466,7 +1397,6 @@ body {
 
 .footer-htmlacademy-logo:active {
   transition: all 0.2s;
-  /* fill: #ffe17f; */
   opacity: 0.3;
 }
 
@@ -1715,12 +1645,11 @@ body {
 }
 
 .product-card-link {
-  /* position: relative; */
+  position: relative;
   text-decoration: none;
   color: inherit;
   display: grid;
   grid-template-columns: 2fr 1fr;
-  /* z-index: 1; */
 }
 
 .product-card-link-new::before {
@@ -1739,7 +1668,6 @@ body {
 }
 
 .card-more {
-  /* display: block; */
   margin: 0;
   position: absolute;
   top: 170px;
@@ -1754,7 +1682,6 @@ body {
   text-transform: uppercase;
   background-color: transparent;
   display: none;
-  cursor: pointer;
   z-index: 2;
 }
 
@@ -1770,41 +1697,25 @@ body {
 }
 
 .product-card-link:hover {
-  transition: all 0.2s;
   opacity: 0.6;
 }
 
-.product-card:hover .card-more {
+.product-card-link:hover+.card-more {
   display: block;
-  /* opacity: 1; */
 }
-
 
 .product-card-link:focus {
   box-shadow: 0 0 0 2px #af4fff;
   outline: none;
 }
 
-.product-card-link:active {
-  transition: all 0.2s;
-  color: rgba(0, 0, 0, 1);
+.product-card-link:active+.card-more {
+  display: block;
 }
 
-.product-card-link:active .card-more {
-  display: block;
-  /* opacity: 1; */
-}
-
-/* .product-card:active .card-more,
-.product-card:active .card-more::before {
-  display: block;
-  opacity: 1;
-} */
-
-.product-card:active .card-more::before {
+.product-card-link:active+.card-more::before {
   background-color: #ffc700;
 }
-
 
 .product-card-image {
   margin-bottom: 32px;
@@ -1934,7 +1845,6 @@ body {
 }
 
 .pagination-show-more:focus {
-  /* box-shadow: inset 0 0 0 2px #af4fff; */
   outline: 2px solid #af4fff;
 }
 
