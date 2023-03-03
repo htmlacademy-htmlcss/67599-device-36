@@ -469,13 +469,13 @@ body {
 .goods-text {
   margin: 0;
   padding: 0;
-  margin-bottom: 60px;
+  margin-bottom: 55px;
 }
 
 .goods-more {
   display: block;
   width: 220px;
-  margin-bottom: 60px;
+  margin-bottom: 45px;
   padding: 10px 0;
 }
 
@@ -501,6 +501,14 @@ body {
   bottom: 0;
   height: 100%;
   background-color: #ffc700;
+}
+
+.info-details:disabled {
+  opacity: 0.3;
+}
+
+.info-details:disabled::after {
+  background-color: #ffe17f;
 }
 
 .goods-list {
@@ -846,13 +854,28 @@ body {
 .services-link {
   position: relative;
   display: block;
-  width: 160px;
-  padding: 10px 0;
+  width: 100%;
   color: #000000;
   text-decoration: none;
   text-align: center;
   letter-spacing: 0.2em;
   z-index: 1;
+}
+
+.setvices-link-txt {
+  display: block;
+  width: 160px;
+  padding: 10px 0;
+}
+
+.services-link:hover,
+.services-link:active {
+  background-color: #ffe17f;
+}
+
+.services-link:active,
+.services-link:active .info-details {
+  background-color: #ffc700;
 }
 
 .services-link:focus {
@@ -862,7 +885,13 @@ body {
 
 .services-link-current {
   color: #ffe17f;
+}
 
+.services-link-current:hover,
+.services-link-current:active {
+  transition: all 0.2s;
+  background-color: #000000;
+  text-align: right;
 }
 
 .services-definition-wrapper {
@@ -957,7 +986,7 @@ body {
   background-size: 47px 31px;
 }
 
-.button-delivery-info {
+.button-delivery::after{
   content: "";
   display: flex;
   justify-content: center;
@@ -969,10 +998,12 @@ body {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: rgba(220, 220, 220, 0.5);
+  background-image: url("../images/services/info.svg");
+  background-color: #dcdcdc;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 2px 12px;
+  opacity: 0.5;
 }
 
 .button-delivery:hover::before {
@@ -980,7 +1011,7 @@ body {
   background-color: #ffc700;
 }
 
-.button-delivery:hover svg g{
+.button-delivery:hover::after {
   transition: all 0.2s;
   opacity: 1;
 }
@@ -991,11 +1022,6 @@ body {
 }
 
 .button-delivery:active {
-  transition: all 0.2s;
-  opacity: 0.6;
-}
-
-.button-delivery:active svg g{
   transition: all 0.2s;
   opacity: 0.3;
 }
@@ -1351,11 +1377,11 @@ body {
   text-decoration: none;
   width: 40px;
   height: 40px;
-  background-color: rgba(255, 255, 255, 0.3);
-  border-radius: 50%;
+  /* background-color: rgba(255, 255, 255, 0.3); */
+  /* border-radius: 50%; */
 }
 
-.button-social::after {
+/* .button-social::after {
   content: "";
   position: absolute;
   top: 0;
@@ -1365,24 +1391,34 @@ body {
   border-radius: 50%;
   background-repeat: no-repeat;
   background-position: center;
+} */
+
+.social {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
-.button-social-telegram::after {
+.social-telegram {
   background-image: url("../images/social/telegram.svg");
   background-size: 14px 12px;
 }
 
-.button-social-youtube::after {
+.social-youtube {
   background-image: url("../images/social/youtube.svg");
   background-size: 16px 11px;
 }
 
-.button-social-twitter::after {
+.social-twitter {
   background-image: url("../images/social/twitter.svg");
   background-size: 15px 15px;
 }
 
-.button-social:hover {
+.social:hover {
   transition: all 0.2s;
   background-color: #ffc700;
 }
@@ -1392,7 +1428,7 @@ body {
   outline: none;
 }
 
-.button-social:active::after {
+.social:active {
   transition: all 0.2s;
   background-color: #ffc700;
   opacity: 0.3;
@@ -1652,12 +1688,14 @@ body {
   box-shadow: inset 0 0 0 2px #af4fff;
   outline: none;
   opacity: 1;
+  background-image: url("../images/sort-lighter.svg");
 }
 
 .button-expensive:active::before,
 .button-cheaper:active::before {
   transition: all 0.2s;
   opacity: 1;
+  background-image: url("../images/sort.svg");
 }
 
 .product-list {
@@ -1677,11 +1715,12 @@ body {
 }
 
 .product-card-link {
-  position: relative;
+  /* position: relative; */
   text-decoration: none;
   color: inherit;
   display: grid;
   grid-template-columns: 2fr 1fr;
+  /* z-index: 1; */
 }
 
 .product-card-link-new::before {
@@ -1700,6 +1739,8 @@ body {
 }
 
 .card-more {
+  /* display: block; */
+  margin: 0;
   position: absolute;
   top: 170px;
   left: 70px;
@@ -1712,9 +1753,9 @@ body {
   font-weight: 800;
   text-transform: uppercase;
   background-color: transparent;
-  z-index: 2;
   display: none;
   cursor: pointer;
+  z-index: 2;
 }
 
 .card-more::before {
@@ -1728,14 +1769,14 @@ body {
   z-index: -1;
 }
 
-.product-card:hover .product-card-link{
+.product-card-link:hover {
   transition: all 0.2s;
   opacity: 0.6;
 }
 
 .product-card:hover .card-more {
   display: block;
-  opacity: 1;
+  /* opacity: 1; */
 }
 
 
@@ -1744,16 +1785,21 @@ body {
   outline: none;
 }
 
-.product-card:active .product-card-link {
+.product-card-link:active {
   transition: all 0.2s;
-  opacity: 0.3;
+  color: rgba(0, 0, 0, 1);
 }
 
-.product-card:active .card-more,
+.product-card-link:active .card-more {
+  display: block;
+  /* opacity: 1; */
+}
+
+/* .product-card:active .card-more,
 .product-card:active .card-more::before {
   display: block;
   opacity: 1;
-}
+} */
 
 .product-card:active .card-more::before {
   background-color: #ffc700;
@@ -1851,7 +1897,7 @@ body {
 .pagination-prev:hover,
 .pagination-next:hover {
   transition: all 0.2s;
-  background-color: #bcbcbc;
+  background-color: #dcdcdc;
 }
 
 .pagination-link:focus {
@@ -1862,7 +1908,7 @@ body {
 
 .pagination-link:active {
   transition: all 0.2s;
-  opacity: 0.6;
+  opacity: 0.3;
 }
 
 .pagination-show-more {
@@ -1883,16 +1929,21 @@ body {
 }
 
 .pagination-show-more:hover {
-  transition: all 0.2s;
-  opacity: 0.6;
+  border: 3px solid #000000;
+  opacity: 1;
 }
 
 .pagination-show-more:focus {
-  box-shadow: inset 0 0 0 2px #af4fff;
-  outline: none;
+  /* box-shadow: inset 0 0 0 2px #af4fff; */
+  outline: 2px solid #af4fff;
 }
 
 .pagination-show-more:active {
-  transition: all 0.2s;
+  border: 3px solid #000000;
+  opacity: 0.3;
+}
+
+.pagination-show-more:disabled {
+  border: 3px solid #e5e5e5;
   opacity: 0.3;
 }
