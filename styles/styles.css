@@ -2403,3 +2403,231 @@ body {
   border: 3px solid #e5e5e5;
   opacity: 0.3;
 }
+
+/* Modal */
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* display: flex; */
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 5;
+  display: none;
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 80px 72px;
+  background-color: #ffffff;
+  border: 10px solid #000000;
+  box-shadow: 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.modal-delivery {
+  box-sizing: border-box;
+  width: 920px;
+}
+
+.modal-close-button {
+  position: absolute;
+  padding: 0;
+  top: 93px;
+  right: 80px;
+  width: 26px;
+  height: 26px;
+  background-color: #ffffff;
+  border: none;
+  background-image: url("../images/close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.modal-title {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+  margin-bottom: 42px;
+}
+
+.delivery-form {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.field-group {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.field-group-name {
+  grid-column: 1 / 3;
+}
+
+.field-group-mail {
+  grid-column: 3 / 5;
+}
+
+.field-group-bring {
+  grid-column: 1 / 4;
+}
+
+.field-group-count {
+  position: relative;
+  grid-column: 4 / 5;
+}
+
+.delivery-description {
+  /* position: relative; */
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  color: #000000;
+  margin-bottom: 14px;
+}
+
+.delivery-description-count {
+  margin: 0;
+}
+
+.count-label {
+  margin-bottom: 1px;
+}
+
+/* count-tooltip */
+.count-label {
+  position: relative;
+}
+
+.count-tooltip {
+  position: absolute;
+  top: 2px;
+  left: 120px;
+}
+
+.count-tooltip-toggle {
+  position: relative;
+  border: none;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: #ffe17f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer
+}
+
+.count-tooltip-text {
+  box-sizing: border-box;
+  position: absolute;
+  top: 35px;
+  right: -30px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  padding: 19px;
+  width: 200px;
+  background: #000000;
+  box-shadow: 0 10px 0 rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  display: none;
+}
+
+.count-tooltip-text::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  right: 36px;
+  width: 14px;
+  height: 14px;
+  background-color: #000000;
+  transform: rotate(45deg);
+  z-index: -1;
+}
+
+.count-tooltip-toggle:hover + .count-tooltip-text,
+.count-tooltip-toggle:focus + .count-tooltip-text {
+  display: block;
+}
+
+.delivery-form-field {
+  padding: 20px;
+  background-color: #f0f0f0;
+  border: 2px solid #f0f0f0;
+}
+
+.field-name {
+  padding-right: 50px;
+  background-image: url("../images/enter-name.svg");
+  background-size: 13px 12px;
+  background-repeat: no-repeat;
+  background-position: right 24px center;
+}
+
+.field-email {
+  padding-right: 50px;
+  background-image: url("../images/mail.svg");
+  background-size: 15px 12px;
+  background-repeat: no-repeat;
+  background-position: right 24px center;
+}
+
+.field-count {
+  text-align: center;
+}
+
+.field-count::placeholder {
+  color: #000000;
+}
+
+.field-count-minus {
+  position: absolute;
+  bottom: 21px;
+  left: 22px;
+  width: 16px;
+  height: 16px;
+  background-image: url("../images/minus.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.field-count-plus {
+  position: absolute;
+  bottom: 21px;
+  right: 22px;
+  width: 16px;
+  height: 16px;
+  background-image: url("../images/plus.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.delivery-form-button {
+  width: 200px;
+  border: none;
+  padding: 10px 0;
+  font-size: 18px;
+  background-color: #ffffff;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.delivery-form-button:focus {
+  box-shadow: 0 0 0 2px #af4fff;
+  outline: none;
+}
