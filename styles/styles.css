@@ -129,14 +129,12 @@ body {
   position: relative;
   width: 520px;
   display: flex;
-  /* background-color: #ffe17f; */
   border: 2px solid transparent;
   border-radius: 50px 50px 50px 50px;
-  z-index: 4;
+  z-index: 1;
 }
 
 .site-search {
-  /* position: relative; */
   font-family: "Rubik", sans-serif;
   font-size: 16px;
   line-height: 20px;
@@ -159,8 +157,7 @@ body {
   left: -3px;
   width: 366px;
   height: 38px;
-  /* border: 2px solid #af4fff; */
-  z-index: 2;
+  z-index:  2;
 }
 
 .form-search-wrapper::after {
@@ -168,10 +165,9 @@ body {
   position: absolute;
   top: -5px;
   right: -4px;
-  width: 160px;
+  width: 162px;
   height: 38px;
-  /* border: 2px solid #af4fff; */
-  /* z-index: 3; */
+  z-index: 3;
 }
 
 .site-search:hover::placeholder  {
@@ -181,6 +177,10 @@ body {
 
 .site-search:focus {
   outline: none;
+}
+
+.site-search:focus+.button-site-text {
+  z-index: 2;
 }
 
 .site-search:focus~.form-search-wrapper::before {
@@ -209,18 +209,8 @@ body {
   border-left: none;
   border-radius: 0 50px 50px 0;
   background-color: #ffe17f;
-  z-index: 3;
+  z-index: 4;
 }
-
-/* .button-search-wrapper {
-  content: "";
-  position: absolute;
-  top: -5px;
-  right: -5px;
-  width: 160px;
-  height: 38px;
-  z-index: 3;
-} */
 
 .button-site-text:hover {
   color: #ffffff;
@@ -462,8 +452,6 @@ body {
 .popover-open-cart:disabled:hover {
   background-color: #ffffff;
 }
-
-
 
 .navigation {
   display: flex;
@@ -891,6 +879,7 @@ body {
 }
 
 .slider-pagination-item {
+  position: relative;
   margin: 0;
   margin-right: 20px;
   padding: 0;
@@ -906,31 +895,22 @@ body {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  /* border: 2px solid #000000; */
   background-color: #ffffff;
   cursor: pointer;
 }
 
-/* .slider-pagination-button::before {
-  content: "";
+.pagination-wrapper {
   position: absolute;
-  top: -6px;
-  left: -6px;
+  left: -4px;
+  top: -4px;
   width: 16px;
   height: 16px;
-  outline: none;
-} */
+  border: none;
+  z-index: -1;
+}
 
-.slider-pagination-button::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: -6px;
-  left: -6px;
-  width: 16px;
-  height: 16px;
-  /* border-radius: 5px; */
-  /* background-color: transparent; */
+.slider-pagination-button:focus+.pagination-wrapper  {
+  border: 2px solid #af4fff;
 }
 
 .slider-pagination-button-current {
@@ -944,7 +924,6 @@ body {
 
 .slider-pagination-button:focus::before {
   border: 2px solid #af4fff;
-  border-radius: 6px;
 }
 
 .slider-pagination-button:active {
@@ -1488,7 +1467,6 @@ body {
 }
 
 .subscribe-button:focus {
-  /* box-shadow: 0 0 0 3px #af4fff; */
   border: 3px solid #af4fff;
   outline: none;
 }
@@ -1521,8 +1499,9 @@ body {
   opacity: 0.5;
 }
 
-.subscribe-newsletter-error { /* Класс для Неправильного формата email */
-  border: 2px solid #ff3d3d;
+.subscribe-newsletter:invalid {
+  border: 3px solid transparent;
+  border-bottom: 3px solid #ff3d3d;
 }
 
 .subscribe-newsletter:hover {
@@ -1530,7 +1509,6 @@ body {
 }
 
 .subscribe-newsletter:focus {
-  /* box-shadow: 0 0 0 3px #af4fff; */
   border:3px solid #af4fff;
   outline: none;
 }
@@ -2412,7 +2390,7 @@ body {
   /* display: flex; */
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background: rgba(240, 240, 240, 0.9);
   z-index: 5;
   display: none;
 }
@@ -2472,6 +2450,7 @@ body {
 }
 
 .field-group-mail {
+  position: relative;
   grid-column: 3 / 5;
 }
 
@@ -2569,6 +2548,26 @@ body {
   border: 2px solid #f0f0f0;
 }
 
+.delivery-form-field:hover {
+  transition: all 0.2s;
+  background-color: #dcdcdc;
+  border: 2px solid #dcdcdc;
+}
+
+.delivery-form-field:focus {
+  box-shadow: 0 0 0 2px #af4fff;
+  outline: none;
+}
+
+.delivery-form-field:invalid {
+  box-shadow: 0 0 0 2px #ff3d3d;
+  outline: none;
+}
+
+.delivery-form-field:disabled {
+  opacity: 0.3;
+}
+
 .field-name {
   padding-right: 50px;
   background-image: url("../images/enter-name.svg");
@@ -2583,6 +2582,22 @@ body {
   background-size: 15px 12px;
   background-repeat: no-repeat;
   background-position: right 24px center;
+}
+
+.field-mail-reference {
+  position: absolute;
+  bottom: -22px;
+  left: 0;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.field-email:invalid + .field-mail-reference {
+  color: #ff3d3d;
 }
 
 .field-count {

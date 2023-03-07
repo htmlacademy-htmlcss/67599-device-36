@@ -17,7 +17,6 @@
         <form class="form-search" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="search">Поиск по сайту.</label>
           <input class="site-search" id="search" type="text" name="appointment-search" placeholder="Поиск по сайту">
-          <span class="form-search-wrapper"></span>
           <button class="button button-site-text" type="submit">Найти</button>
           <span class="form-search-wrapper"></span>
         </form>
@@ -379,6 +378,47 @@
         </section>
       </div>
     </footer>
+
+    <div class="modal-container">
+      <div class="modal modal-delivery">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Доставка под заказ</h2>
+          <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="field-group field-group-name">
+              <label class="delivery-description" for="delivery-name">Ваше имя</label>
+              <input class="delivery-form-field field-name" type="text" id="delivery-name" name="delivery-name" placeholder="Введите имя">
+            </p>
+            <p class="field-group field-group-mail">
+              <label class="delivery-description" for="delivery-mail">Ваш e-mail:</label>
+              <input class="delivery-form-field field-email" type="email" id="delivery-mail" name="delivery-mail" placeholder="почта">
+              <span class="field-mail-reference">Забавный у вас адрес</span>
+            </p>
+            <p class="field-group field-group-bring">
+              <label class="delivery-description" for="delivery-bring">Что нужно привезти:</label>
+              <input class="delivery-form-field" type="text" id="delivery-bring" name="delivery-bring" placeholder="В свободной форме">
+            </p>
+            <p class="field-group field-group-count">
+              <span class="count-label">
+                <label class="delivery-description delivery-description-count" for="delivery-count">Количество:</label>
+                <span class="count-tooltip">
+                  <button class="count-tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
+                    <svg class="count-tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="2" height="12" fill="none" viewBox="0 0 2 12"><g fill="#000" clip-path="url(#a)"><path d="M2 0H0v2h2V0ZM2 4H0v8h2V4Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h2v12H0z"/></clipPath></defs></svg>
+                  </button>
+                  <span class="count-tooltip-text" role="tooltip" id="tooltip-label-date">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.</span>
+                </span>
+              </span>
+              <input class="delivery-form-field field-count" type="text" id="delivery-count" name="delivery-count" placeholder="1">
+              <span class="field-count-minus"></span>
+              <span class="field-count-plus"></span>
+            </p>
+            <button class="delivery-form-button info-details" type="submit">Отправить</button>
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 
 </html>
