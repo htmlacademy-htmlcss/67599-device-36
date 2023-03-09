@@ -39,16 +39,18 @@
                 <ul class="cart-items-list">
                   <li class="cart-item">
                     <a href="#" class="cart-item-link">
-                      <img class="cart-item-img" src="images/popover/product-1-small.jpg" alt="Любительская селфи-палка" width="39" height="43">
+                      <img class="cart-item-img" src="images/popover/product-1-small.jpg" alt="Любительская селфи-палка." width="39" height="43">
                       <p class="cart-item-description">Любительская селфи-палка</p>
                     </a>
+                    <span class="visually-hidden">Удалить из корзины.</span>
                     <button class="cart-item-remove" type="button"></button>
                   </li>
                   <li class="cart-item">
                     <a href="#" class="cart-item-link">
-                      <img class="cart-item-img" src="images/popover/product-2-small.jpg" alt="Любительская селфи-палка" width="39" height="43">
+                      <img class="cart-item-img" src="images/popover/product-2-small.jpg" alt="Любительская селфи-палка." width="39" height="43">
                       <p class="cart-item-description">Профессиональная селфи-палка</p>
                     </a>
+                    <span class="visually-hidden">Удалить из корзины.</span>
                     <button class="cart-item-remove" type="button"></button>
                   </li>
                 </ul>
@@ -59,7 +61,7 @@
                   </li>
                 </ul>
               </div>
-              <button class="popover-open-cart">Открыть корзину</button>
+              <button class="popover-open-cart" type="button">Открыть корзину</button>
             </div>
           </li>
         </ul>
@@ -230,7 +232,7 @@
               <a class="catalog-link catalog-link-virtual" href="#">Виртуальная реальность</a>
             </li>
             <li class="catalog-item">
-              <a class="catalog-link catalog-link-monopods" href="catalog.html">Моноподы для селфи</a>
+              <a class="catalog-link catalog-link-monopods" href="catalog.html">Моноподы<br> для селфи</a>
             </li>
             <li class="catalog-item">
               <a class="catalog-link catalog-link-action" href="#">Экшн-камеры</a>
@@ -275,7 +277,7 @@
               <div class="services-definition services-definition-show services-delivery">
                 <h3 class="services-title">Доставка</h3>
                 <p class="services-description">
-                  Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
+                  Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду совершенно бесплатно! Ведь мы неплохо
                   заработаем, поднимая его на ваш этаж.</p>
               </div>
 
@@ -352,7 +354,7 @@
         <div class="page-container">
           <div class="subscribe-description">
             <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-            <p class="subscribe-info">Еженедельный дайджест с обзорами новинок,<br>длительными тест-драйвами, распаковками,
+            <p class="subscribe-info">Еженедельный дайджест с обзорами новинок,<br>  длительными тест-драйвами, распаковками,
               а также акции, спецпредложения и вот это вот всё.</p>
           </div>
 
@@ -438,7 +440,7 @@
     <div class="modal-container">
       <div class="modal modal-delivery">
         <button class="modal-close-button">
-          <span class="visually-hidden">Закрыть</span>
+          <span class="visually-hidden">Закрыть.</span>
         </button>
         <section class="modal-content">
           <h2 class="modal-title">Доставка под заказ</h2>
@@ -467,8 +469,10 @@
                 </span>
               </span>
               <input class="delivery-form-field field-count" type="text" id="delivery-count" name="delivery-count" placeholder="1">
-              <span class="field-count-minus"></span>
-              <span class="field-count-plus"></span>
+              <span class="visually-hidden">Кнопка минус.</span>
+              <button class="field-count-button field-count-minus" type="button"></button>
+              <span class="visually-hidden">Кнопка плюс.</span>
+              <button class="field-count-button field-count-plus" type="button"></button>
             </p>
             <button class="delivery-form-button info-details" type="submit">Отправить</button>
           </form>
