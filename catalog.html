@@ -38,16 +38,18 @@
                   <ul class="cart-items-list">
                     <li class="cart-item">
                       <a href="#" class="cart-item-link">
-                        <img class="cart-item-img" src="images/popover/product-1-small.jpg" alt="Любительская селфи-палка" width="39" height="43">
+                        <img class="cart-item-img" src="images/popover/product-1-small.jpg" alt="Любительская селфи-палка." width="39" height="43">
                         <p class="cart-item-description">Любительская селфи-палка</p>
                       </a>
+                      <span class="visually-hidden">Удалить из корзины.</span>
                       <button class="cart-item-remove" type="button"></button>
                     </li>
                     <li class="cart-item">
                       <a href="#" class="cart-item-link">
-                        <img class="cart-item-img" src="images/popover/product-2-small.jpg" alt="Любительская селфи-палка" width="39" height="43">
+                        <img class="cart-item-img" src="images/popover/product-2-small.jpg" alt="Любительская селфи-палка." width="39" height="43">
                         <p class="cart-item-description">Профессиональная селфи-палка</p>
                       </a>
+                      <span class="visually-hidden">Удалить из корзины.</span>
                       <button class="cart-item-remove" type="button"></button>
                     </li>
                   </ul>
@@ -58,7 +60,7 @@
                     </li>
                   </ul>
                 </div>
-                <button class="popover-open-cart">Открыть корзину</button>
+                <button class="popover-open-cart" type="button">Открыть корзину</button>
               </div>
           </li>
         </ul>
@@ -139,21 +141,25 @@
               <div class="range">
                 <div class="range-scale">
                   <div class="range-bar">
-                    <button class="range-toggle toggle-min">
+                    <button class="range-toggle toggle-min" type="button">
                       <span class="visually-hidden">Изменить минимальную цену.</span>
                     </button>
-                    <button class="range-toggle toggle-max">
+                    <span class="range-toggle-wrapper"></span>
+                    <button class="range-toggle toggle-max" type="button">
                       <span class="visually-hidden">Изменить максимальную цену.</span>
                     </button>
+                    <span class="range-toggle-wrapper"></span>
                   </div>
                 </div>
 
                 <div class="range-wrapper-inputs">
                   <label class="control-range">
-                    от <input class="control-input" type="number" value="0" name="min-price">
+                    от <input class="control-input control-input-min" type="number" value="0" name="min-price">
+                    <span class="control-input-wrapper"></span>
                   </label>
                   <label class="control-range">
-                    до <input class="control-input" type="number" value="5000" name="max-price">
+                    до <input class="control-input control-input-max" type="number" value="5000" name="max-price">
+                    <span class="control-input-wrapper"></span>
                   </label>
                 </div>
               </div>
@@ -168,6 +174,7 @@
                     <input class="visually-hidden control-input" type="checkbox" name="color-black" checked>
                     <span class="control-mark"></span>
                     <span class="control-label">Черный</span>
+                    <span class="control-selector-wrapper"></span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
@@ -175,6 +182,7 @@
                     <input class="visually-hidden control-input" type="checkbox" name="color-white" checked>
                     <span class="control-mark"></span>
                     <span class="control-label">Белый</span>
+                    <span class="control-selector-wrapper"></span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
@@ -182,6 +190,7 @@
                     <input class="visually-hidden control-input" type="checkbox" name="color-blue">
                     <span class="control-mark"></span>
                     <span class="control-label">Синий</span>
+                    <span class="control-selector-wrapper"></span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
@@ -189,6 +198,7 @@
                     <input class="visually-hidden control-input" type="checkbox" name="color-red">
                     <span class="control-mark"></span>
                     <span class="control-label">Красный</span>
+                    <span class="control-selector-wrapper"></span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
@@ -196,27 +206,30 @@
                     <input class="visually-hidden control-input" type="checkbox" name="color-pink">
                     <span class="control-mark"></span>
                     <span class="control-label">Розовый</span>
+                    <span class="control-selector-wrapper"></span>
                   </label>
                 </li>
               </ul>
             </fieldset>
 
-            <fieldset class="catalog-filter-group">
+            <fieldset class="catalog-filter-group catalog-filter-group-bluetooth">
               <legend class="catalog-filter-title">Bluetooth</legend>
 
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="visually-hidden contol-input" type="radio" name="bluetooth-group" value="yes" checked>
+                    <input class="visually-hidden control-input" type="radio" name="bluetooth-group" value="yes" checked>
                     <span class="control-mark"></span>
                     <span class="control-label">Есть</span>
+                    <span class="control-selector-wrapper"></span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="visually-hidden contol-input" type="radio" name="bluetooth-group" value="no">
+                    <input class="visually-hidden control-input" type="radio" name="bluetooth-group" value="no">
                     <span class="control-mark"></span>
                     <span class="control-label">Нет</span>
+                    <span class="control-selector-wrapper"></span>
                   </label>
                 </li>
               </ul>
@@ -378,47 +391,6 @@
         </section>
       </div>
     </footer>
-
-    <div class="modal-container">
-      <div class="modal modal-delivery">
-        <button class="modal-close-button">
-          <span class="visually-hidden">Закрыть</span>
-        </button>
-        <section class="modal-content">
-          <h2 class="modal-title">Доставка под заказ</h2>
-          <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
-            <p class="field-group field-group-name">
-              <label class="delivery-description" for="delivery-name">Ваше имя</label>
-              <input class="delivery-form-field field-name" type="text" id="delivery-name" name="delivery-name" placeholder="Введите имя">
-            </p>
-            <p class="field-group field-group-mail">
-              <label class="delivery-description" for="delivery-mail">Ваш e-mail:</label>
-              <input class="delivery-form-field field-email" type="email" id="delivery-mail" name="delivery-mail" placeholder="почта">
-              <span class="field-mail-reference">Забавный у вас адрес</span>
-            </p>
-            <p class="field-group field-group-bring">
-              <label class="delivery-description" for="delivery-bring">Что нужно привезти:</label>
-              <input class="delivery-form-field" type="text" id="delivery-bring" name="delivery-bring" placeholder="В свободной форме">
-            </p>
-            <p class="field-group field-group-count">
-              <span class="count-label">
-                <label class="delivery-description delivery-description-count" for="delivery-count">Количество:</label>
-                <span class="count-tooltip">
-                  <button class="count-tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
-                    <svg class="count-tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="2" height="12" fill="none" viewBox="0 0 2 12"><g fill="#000" clip-path="url(#a)"><path d="M2 0H0v2h2V0ZM2 4H0v8h2V4Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h2v12H0z"/></clipPath></defs></svg>
-                  </button>
-                  <span class="count-tooltip-text" role="tooltip" id="tooltip-label-date">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.</span>
-                </span>
-              </span>
-              <input class="delivery-form-field field-count" type="text" id="delivery-count" name="delivery-count" placeholder="1">
-              <span class="field-count-minus"></span>
-              <span class="field-count-plus"></span>
-            </p>
-            <button class="delivery-form-button info-details" type="submit">Отправить</button>
-          </form>
-        </section>
-      </div>
-    </div>
   </body>
 
 </html>
