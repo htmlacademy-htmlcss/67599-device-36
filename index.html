@@ -41,16 +41,18 @@
                       <img class="cart-item-img" src="images/popover/product-1-small.jpg" alt="Любительская селфи-палка." width="39" height="43">
                       <p class="cart-item-description">Любительская селфи-палка</p>
                     </a>
-                    <span class="visually-hidden">Удалить из корзины.</span>
-                    <button class="cart-item-remove" type="button"></button>
+                    <button class="cart-item-remove" type="button">
+                      <span class="visually-hidden">Удалить из корзины.</span>
+                    </button>
                   </li>
                   <li class="cart-item">
                     <a href="#" class="cart-item-link">
                       <img class="cart-item-img" src="images/popover/product-2-small.jpg" alt="Любительская селфи-палка." width="39" height="43">
                       <p class="cart-item-description">Профессиональная селфи-палка</p>
                     </a>
-                    <span class="visually-hidden">Удалить из корзины.</span>
-                    <button class="cart-item-remove" type="button"></button>
+                    <button class="cart-item-remove" type="button">
+                      <span class="visually-hidden">Удалить из корзины.</span>
+                    </button>
                   </li>
                 </ul>
                 <ul class="cart-items-list-total">
@@ -438,7 +440,7 @@
 
     <div class="modal-container">
       <div class="modal modal-delivery">
-        <button class="modal-close-button">
+        <button class="modal-close-button" type="button">
           <span class="visually-hidden">Закрыть.</span>
         </button>
         <section class="modal-content">
@@ -468,10 +470,12 @@
                 </span>
               </span>
               <input class="delivery-form-field field-count" type="text" id="delivery-count" name="delivery-count" placeholder="1">
-              <span class="visually-hidden">Кнопка минус.</span>
-              <button class="field-count-button field-count-minus" type="button"></button>
-              <span class="visually-hidden">Кнопка плюс.</span>
-              <button class="field-count-button field-count-plus" type="button"></button>
+              <button class="field-count-button field-count-minus" type="button">
+                <span class="visually-hidden">Кнопка минус.</span>
+              </button>
+              <button class="field-count-button field-count-plus" type="button">
+                <span class="visually-hidden">Кнопка плюс.</span>
+              </button>
             </p>
             <button class="delivery-form-button info-details" type="submit">Отправить</button>
           </form>
