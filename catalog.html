@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="stylesheet" href="styles/styles.css">
     <title>Каталог</title>
   </head>
@@ -16,7 +17,7 @@
         </a>
         <form class="form-search" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="search">Поиск по сайту.</label>
-          <input class="site-search" id="search" type="text" name="appointment-search" placeholder="Поиск по сайту">
+          <input class="site-search site-search-catalog" id="search" type="text" name="appointment-search" placeholder="Текст поиска">
           <button class="button button-site-text" type="submit">Найти</button>
           <span class="form-search-wrapper"></span>
         </form>
@@ -41,16 +42,18 @@
                         <img class="cart-item-img" src="images/popover/product-1-small.jpg" alt="Любительская селфи-палка." width="39" height="43">
                         <p class="cart-item-description">Любительская селфи-палка</p>
                       </a>
-                      <span class="visually-hidden">Удалить из корзины.</span>
-                      <button class="cart-item-remove" type="button"></button>
+                      <button class="cart-item-remove" type="button">
+                        <span class="visually-hidden">Удалить из корзины.</span>
+                      </button>
                     </li>
                     <li class="cart-item">
                       <a href="#" class="cart-item-link">
                         <img class="cart-item-img" src="images/popover/product-2-small.jpg" alt="Любительская селфи-палка." width="39" height="43">
                         <p class="cart-item-description">Профессиональная селфи-палка</p>
                       </a>
-                      <span class="visually-hidden">Удалить из корзины.</span>
-                      <button class="cart-item-remove" type="button"></button>
+                      <button class="cart-item-remove" type="button">
+                        <span class="visually-hidden">Удалить из корзины.</span>
+                      </button>
                     </li>
                   </ul>
                   <ul class="cart-items-list-total">
@@ -136,7 +139,7 @@
           <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="get">
             <h2 class="catalog-products-title">Фильтр:</h2>
             <fieldset class="catalog-filter-group">
-              <legend class="catalog-filter-title">Стоимость</legend>
+              <legend class="catalog-filter-title catalog-filter-title-price">Стоимость</legend>
 
               <div class="range">
                 <div class="range-scale">
@@ -213,14 +216,14 @@
             </fieldset>
 
             <fieldset class="catalog-filter-group catalog-filter-group-bluetooth">
-              <legend class="catalog-filter-title">Bluetooth</legend>
+              <legend class="catalog-filter-title catalog-filter-title-bluetooth">Bluetooth</legend>
 
               <ul class="catalog-filter-list">
-                <li class="catalog-filter-item">
+                <li class="catalog-filter-item catalog-filter-item-bluetooth">
                   <label class="control">
                     <input class="visually-hidden control-input" type="radio" name="bluetooth-group" value="yes" checked>
-                    <span class="control-mark"></span>
-                    <span class="control-label">Есть</span>
+                    <span class="control-mark control-mark-bluetooth"></span>
+                    <span class="control-label control-label-bluetooth">Есть</span>
                     <span class="control-selector-wrapper"></span>
                   </label>
                 </li>
@@ -266,7 +269,7 @@
                   <h3 class="product-card-title">Любительская<br> селфи-палка</h3>
                   <p class="product-card-price">500 ₽</p>
                 </a>
-                <button class="card-more" type="button">Подробнее</button>
+                <p class="card-more">Подробнее</p>
               </li>
               <li class="product-card">
                 <a class="product-card-link product-card-link-new" href="#">
@@ -275,7 +278,7 @@
                       <h3 class="product-card-title">Профессиональная селфи-палка</h3>
                       <p class="product-card-price">1 500 ₽</p>
                 </a>
-                <button class="card-more" type="button">Подробнее</button>
+                <p class="card-more">Подробнее</p>
               </li>
               <li class="product-card">
                 <a class="product-card-link" href="#">
@@ -284,7 +287,7 @@
                       <h3 class="product-card-title">Непотопляемая селфи-палка</h3>
                       <p class="product-card-price">2 500 ₽</p>
                 </a>
-                <button class="card-more" type="button">Подробнее</button>
+                <p class="card-more">Подробнее</p>
               </li>
               <li class="product-card">
                 <a class="product-card-link" href="#">
@@ -293,7 +296,7 @@
                       <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3>
                       <p class="product-card-price">1 500 ₽</p>
                 </a>
-                <button class="card-more" type="button">Подробнее</button>
+                <p class="card-more">Подробнее</p>
               </li>
             </ul>
 
