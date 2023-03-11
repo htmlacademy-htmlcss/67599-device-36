@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="utf-8">
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="stylesheet" href="styles/styles.css">
     <title>Каталог</title>
   </head>
@@ -16,7 +16,7 @@
         </a>
         <form class="form-search" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="search">Поиск по сайту.</label>
-          <input class="site-search" id="search" type="text" name="appointment-search" placeholder="Поиск по сайту">
+          <input class="site-search site-search-catalog" id="search" type="text" name="appointment-search" placeholder="Текст поиска">
           <button class="button button-site-text" type="submit">Найти</button>
           <span class="form-search-wrapper"></span>
         </form>
@@ -138,7 +138,7 @@
           <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="get">
             <h2 class="catalog-products-title">Фильтр:</h2>
             <fieldset class="catalog-filter-group">
-              <legend class="catalog-filter-title">Стоимость</legend>
+              <legend class="catalog-filter-title catalog-filter-title-price">Стоимость</legend>
 
               <div class="range">
                 <div class="range-scale">
